@@ -1,55 +1,131 @@
 html {
     box-sizing: border-box;
-    color: white;
     font-size: 100%;
     margin: 0;
     border: 3px solid black;
+    box-sizing: border-box;
     font-family: 'Merriweather', serif;
+    color: black;
+
 }
+
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bfddb8+0,6393c1+100&0.09+0,0.39+100 */
+    background: -moz-linear-gradient(-45deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17bfddb8', endColorstr='#636393c1', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+}
+
 
 nav {
     width: 100%;
     margin-top: 0rem;
-    align-items: center;
-    border: 2px solid black;
-    padding: .6rem;
     border-width: 1pt;
     margin: 0 auto;
+    padding: .7rem 0rem;
     font-family: 'Domine', serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Domine', serif;
 }
 
-nav a{
+nav a {
     text-decoration: none;
-    color: black;
-}
-
-nav a:visited{
-    color: black;
+    display: block;
+    box-sizing: inherit;
 }
 
 .nav-list {
     display: flex;
     justify-content: space-around;
     width: 90%;
-    margin-left: 5%;
     margin: 0 auto;
-    
+    padding: 0;
+
 }
 
 .nav-list li {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    list-style: none;
+
+}
+
+.nav-list a {
+    color: black;
+    transition: transform 0.3s ease-out;
+}
+
+.mainImageDiv {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("./assets/loloFront1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: white;
+    margin: 0;
+}
+
+.heroText h1 {
+    font-size: 10rem;
+    margin-bottom: 10px;
+}
+
+.heroText p {
+    font-size: 4rem;
+    margin: 0 0 1rem 0;
+}
+.heroText button{
+    max-width: 200px;
+    padding: 1rem;
+    border-radius: .7rem;
+    box-shadow: 2px 2px 3px black;
+    font-size: 150%;
+    color: rgb(1, 71, 1);
+    position: sticky;
+    align-self: center;
+    max-height: 80px;
+    min-width: 160px;
+
+}
+
+.nav-list a:hover {
+    color: rgb(1, 71, 1);
+    transition: color 0.5s ease-out;
+    text-shadow: 2px 3px 5px rgba(2, 107, 2, 0.2);
+    transition: transform 0.4s ease-out;
+    transform: translateY(4px);
+}
+
+nav a:visited {
+    text-decoration: none;
 }
 
 #page-container {
     position: relative;
     min-height: 100vh;
-    max-width: 1500px;
-    min-width: 200px;
+    max-width: 1100px;
+    min-width: 300px;
     margin: 0 auto;
+    box-shadow: 1px 3px 3px gray;
+    background-color: white;
 }
 
 #content-wrap {
@@ -57,12 +133,97 @@ nav a:visited{
     /* Footer height */
 }
 
+
+.mainText{
+    margin-left: 1rem;
+}
+
+blockquote{
+    font-style: oblique;
+    font-size: 1.5rem;
+    color: rgb(1, 71, 1);
+    margin: 3rem;
+    max-width: 80%;
+    border: 2px solid black;
+}
+
 #footer {
     position: absolute;
-    font-size: 0.6em;
+    font-size: 0.6rem;
     text-align: center;
     bottom: 0;
+    margin-bottom: 15px;
     width: 100%;
     height: 0rem;
     /* Footer height */
+}
+
+@media (max-width: 860px) {
+
+    .nav-list li {
+        font-size: .9rem;
+        border: 2px solid black;
+        padding: .5rem;
+        border-radius: 1rem;
+        color: #FBBE01 !important;
+        box-shadow: 1px 1px 5px black;
+    }
+
+    .heroText p {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 732px) {
+    .nav-list {
+        flex-direction: column;
+        max-width: 200px;
+        
+    }
+
+    .nav-list li {
+        font-size: 1.2rem;
+        text-align: center;
+        background: -moz-linear-gradient(-45deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17bfddb8', endColorstr='#636393c1', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        font-size: .9rem;
+        padding: .3rem;
+
+    }
+
+    #navlist a {
+        color: rgb(9, 15, 7);
+    }
+
+    .heroText h1 {
+        font-size: 6rem;
+    }
+
+    .heroText p {
+        font-size: 1.9rem;
+    }
+    .hertoText button{
+        font-size: 120%
+    }
+    .mainImageDiv {
+        height: 400px;
+    }
+    h2{
+       font-size: 1rem;
+    }
+
+    p{font-size: .7rem;}
+
+    blockquote{
+        font-size: .9rem;
+        width: 95% !important;
+        margin: 20px auto;
+    }
+
 }
