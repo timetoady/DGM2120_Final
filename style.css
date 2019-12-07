@@ -32,6 +32,11 @@ nav {
     font-family: 'Domine', serif;
 }
 
+.active{
+    font-style: italic;
+    text-decoration: underline;
+}
+
 h1,
 h2 {
     font-family: 'Domine', serif;
