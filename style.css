@@ -182,9 +182,6 @@ blockquote{
     box-shadow: 1px 1px 5px black;
   }
 
-span{
-    margin-bottom: 15px;
-}
 
 form.form1 fieldset {
     border: 1px solid -moz-linear-gradient(-45deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
