@@ -29,9 +29,9 @@
 
             </header>
             <main>
-                <section class="mainText">
-                    <h1>Book with us!</h1>
-                    <h3>Schedule a booking with us today! Give us a call at <a href="tel:406-555-2121">406-555-2121</a>
+                <section>
+                    <h1 class="mainText">Book with us!</h1>
+                    <h3 class="mainText">Schedule a booking with us today! Give us a call at <a href="tel:406-555-2121">406-555-2121</a>
                         to schedule, or you can complete the brief form below.</h3>
 
                     <div>
@@ -39,15 +39,16 @@
                             class="form1">
                             <fieldset>
                                 <legend>Your info</legend>
-                                <label><span>Name</span><input name="first" value="" type="text" placeholder=""
+                                <label><span>Name</span><input name="first" value="" type="text" placeholder="Full name"
                                         class="infoInput" required></label>
                                 <label><span>Phone number: </span><input type="number" name="phonenumber" value=""
-                                        pattern="[0-9]" class="infoInput"></label>
+                                        pattern="[0-9-. ]{10,14}" class="infoInput"></label>
                                 <label><span>Email: </span><input type="email" name="email" value=""
-                                        class="infoInput"></label>
+                                        class="infoInput" required></label>
                                 <label><span>Size of party: </span><input type="number" name="party" value=""
                                         class="infoInput" pattern="[0-9]"
                                         placeholder="Put number of people in your group here" required></label>
+                                        <label><span>Preferred start date:</span> <input type="date" name="date"></label>
                             </fieldset>
                             <fieldset class="fieldset-auto-width">
                                 <legend>Your package</legend>
@@ -71,7 +72,7 @@
                                     placeholder="Tell us what you're thinking!"></textarea>
                                 <input type="hidden" name="ttgames" value="blueHost">
                             </fieldset>
-                            <input type="submit" name="submit" value="Submit" class="submitButton">
+                            <input type="submit" name="submit" value="Send my info" class="submitButton">
 
 
                         </form>
