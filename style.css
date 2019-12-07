@@ -224,6 +224,10 @@ form.form1 fieldset {
     margin-top: 1rem;
 }
 
+.thanksDiv{
+    text-align: center;
+}
+
 #footer {
     position: absolute;
     font-size: 0.6rem;
