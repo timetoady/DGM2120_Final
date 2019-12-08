@@ -1,3 +1,5 @@
+/*General Settings*/
+
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -22,6 +24,42 @@ body {
 
 }
 
+h1,
+h2 {
+    font-family: 'Domine', serif;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    max-width: 1100px;
+    min-width: 200px;
+    margin: 0 auto;
+    box-shadow: 1px 3px 3px gray;
+    background-color: white;
+}
+
+#content-wrap {
+    padding-bottom: 5rem;
+    /* Footer height */
+}
+
+
+.mainText {
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+blockquote {
+    font-style: oblique;
+    font-size: 1.5rem;
+    color: rgb(1, 71, 1);
+    margin: 3rem;
+    max-width: 80%;
+    border: 2px solid black;
+}
+
+/* Naviation Settings */
 
 nav {
     width: 100%;
@@ -32,14 +70,10 @@ nav {
     font-family: 'Domine', serif;
 }
 
-.active{
+.active {
     font-style: italic;
     text-decoration: underline;
-}
 
-h1,
-h2 {
-    font-family: 'Domine', serif;
 }
 
 nav a {
@@ -67,6 +101,20 @@ nav a {
     color: black;
     transition: transform 0.3s ease-out;
 }
+
+.nav-list a:hover {
+    color: rgb(1, 71, 1);
+    transition: color 0.5s ease-out;
+    text-shadow: 2px 3px 5px rgba(2, 107, 2, 0.2);
+    transition: transform 0.4s ease-out;
+    transform: translateY(4px);
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
+/* Main Landing Page Settings */
 
 .mainImageDiv {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("./assets/loloFront1.jpg");
@@ -97,7 +145,8 @@ nav a {
     font-size: 4rem;
     margin: 0 0 1rem 0;
 }
-button{
+
+button {
     max-width: 200px;
     padding: 1rem;
     border-radius: .7rem;
@@ -111,47 +160,7 @@ button{
 
 }
 
-.nav-list a:hover {
-    color: rgb(1, 71, 1);
-    transition: color 0.5s ease-out;
-    text-shadow: 2px 3px 5px rgba(2, 107, 2, 0.2);
-    transition: transform 0.4s ease-out;
-    transform: translateY(4px);
-}
-
-nav a:visited {
-    text-decoration: none;
-}
-
-#page-container {
-    position: relative;
-    min-height: 100vh;
-    max-width: 1100px;
-    min-width: 200px;
-    margin: 0 auto;
-    box-shadow: 1px 3px 3px gray;
-    background-color: white;
-}
-
-#content-wrap {
-    padding-bottom: 5rem;
-    /* Footer height */
-}
-
-
-.mainText{
-    margin-left: 3rem;
-    margin-right: 1rem;
-}
-
-blockquote{
-    font-style: oblique;
-    font-size: 1.5rem;
-    color: rgb(1, 71, 1);
-    margin: 3rem;
-    max-width: 80%;
-    border: 2px solid black;
-}
+/* Gallery Settings */
 
 .framed {
     width: 100%;
@@ -159,80 +168,81 @@ blockquote{
     margin: 10px auto;
     align-items: center;
     border: none;
-  }
+}
 
-  #gallery {
+#gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(375px, 0.7fr));
     grid-gap: 2%;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    
-  }
+
+}
 
 .galleryimg {
     align-items: center;
     width: 100%;
-    object-fit: cover;
-    
-  }
 
-  .galleryfig {
+
+}
+
+.galleryfig {
     border: 3px black solid;
     box-shadow: 1px 1px 5px black;
-  }
+}
 
-
+/* Form Settings */
 form.form1 fieldset {
     border: 1px solid -moz-linear-gradient(-45deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
     border-radius: .3rem;
     padding: 1rem 2%;
     margin: 0 .7rem;
-  }
-  
-  form.form1 legend {
+}
+
+form.form1 legend {
     font-size: 1.2rem;
     color: rgb(1, 71, 1);
-  }
-  
-  form.form1 label {
+}
+
+form.form1 label {
     display: block;
-  }
-  
-  form.form1 span {
+}
+
+form.form1 span {
     display: block;
     padding-top: 1rem;
     font-size: 0.8rem;
-  }
-  
-  form.form1 .infoInput {
+}
+
+form.form1 .infoInput {
     font-weight: 600;
     border-radius: .2rem;
     width: 40%;
-    
-    
-  }
-  
-  form.form1 .storyText {
+
+
+}
+
+form.form1 .storyText {
     width: 70%;
     height: 4rem;
     border-radius: .5rem;
-  }
+}
 
-  form.form1 .submitButton {
+form.form1 .submitButton {
     color: rgb(1, 71, 1);
     padding: 1rem;
     font-size: 1.5rem;
     border-radius: .3rem;
     margin-top: 1rem;
     margin-left: 1rem;
-    background-color: rgba(200,200,200,.7);
+    background-color: rgba(200, 200, 200, .7);
 }
 
-.thanksDiv{
+.thanksDiv {
     text-align: center;
 }
 
+/* Footer Settings */
 #footer {
     position: absolute;
     font-size: 0.6rem;
@@ -245,24 +255,33 @@ form.form1 fieldset {
     /* Footer height */
 }
 
-#almostLast{
-    margin-bottom: 0;
-    max-height: 310px;
-}
-@media (min-width: 900px){
-    #video{
+
+
+/* Media Settings */
+
+/* Larger Devices */
+@media (min-width: 900px) {
+    #video {
         width: 90%;
         margin-left: 5%;
-      }
-      #lastOnes{
-        margin-bottom: 2rem;
-        
     }
-          #almostLast{
-          margin-bottom: 0;
-      }
+
+    #almostLast {
+        margin-bottom: 0;
+        max-height: 310px;
+    }
+
+    #lastOnes {
+        margin-bottom: 2rem;
+
+    }
+
+    #almostLast {
+        margin-bottom: 0;
+    }
 }
 
+/* Tablet Size Settings */
 @media (max-width: 860px) {
 
     .nav-list li {
@@ -274,39 +293,50 @@ form.form1 fieldset {
         box-shadow: 1px 1px 5px black;
     }
 
+    .active {
+        background-color: rgba(2, 107, 2, 0.2) !important;
+    }
+
     .heroText p {
         font-size: 3.4rem;
     }
 
-    #gallery{
+    #gallery {
         margin: 0 auto;
         align-items: center;
         width: 100%;
-       
-        
-      }
-    #gallery figure{
+    }
+
+    #lastOnes {
+        margin-bottom: 7rem;
+
+    }
+
+    #gallery figure {
         width: 125%;
 
     }
 
-    .mainText{
+    .mainText {
         margin-left: .7rem;
     }
 }
+
+
+/* Phone-size Settings */
 
 @media (max-width: 732px) {
     .nav-list {
         flex-direction: column;
         max-width: 200px;
-        
+
     }
 
-
-    .mainText{
+    .mainText {
         margin-left: .2rem;
-        
+
     }
+
     .nav-list li {
         font-size: 1.2rem;
         text-align: center;
@@ -334,65 +364,59 @@ form.form1 fieldset {
     .heroText p {
         font-size: 1.6rem;
     }
-    .hertoText button{
+
+    .hertoText button {
         font-size: 120%
     }
+
     .mainImageDiv {
         height: 400px;
     }
-    h2{
-       font-size: 1.5rem;
+
+    h2 {
+        font-size: 1.5rem;
     }
 
-    p{font-size: .9rem;}
+    p {
+        font-size: .9rem;
+    }
 
-    blockquote{
+    blockquote {
         font-size: 1rem;
         width: 95% !important;
         margin: 20px auto;
     }
+
     #page-container {
         margin: 20px;
     }
 
-    #galleryfigdiv {
-        width: 200px;
-        margin: 0;
-      }
-    
-      .galleryfig img, figure {
-        width: 96.5%;
-       
-      }
-    
-      .galleryfig{
-        margin: 0;
-        border: none;
-        box-shadow: none;
-      }
-    
-      #gallery {
+    #gallery {
         margin: 0 auto !important;
         width: 100%;
-
-      }
-      #gallery figure{
-        width: 96.5%;
-        text-decoration: underline;
-        
-
+        grid-template-columns: repeat(auto-fit, minmax(60%, 0.787fr));
     }
 
-      #lastOnes{
-          margin-bottom: 7rem;
+    .galleryfig {
+        object-fit: cover;
+        margin: 0;
+    }
 
-      }
+    .galleryimg {
+        width: 100%;
+        object-fit: cover;
+    }
 
-    .packageImg{
+    #lastOnes {
+        margin-bottom: 7rem;
+    }
+
+    .packageImg {
         object-fit: cover;
         width: 100%;
     }
-    .packageFig{
+
+    .packageFig {
         margin: 0 auto;
     }
 
@@ -401,32 +425,31 @@ form.form1 fieldset {
         margin: 0;
         padding: .2rem;
         display: block;
-      }
-    
-      form.form1 .infoInput {
-        width:85%;
-      }
+    }
 
-      form.form1 label {
+    form.form1 .infoInput {
+        width: 85%;
+    }
+
+    form.form1 label {
         font-size: 72%;
         margin: 0;
-      }
+    }
 
-      #selector{
-          max-width: 80%;
-          display: flex;
-      }
+    #selector {
+        max-width: 80%;
+        display: flex;
+    }
 
-      #form1 {
+    #form1 {
         width: 100%;
         margin: 0;
-        
-      }
 
+    }
 
-      #footer{
-          font-size: .5rem;
-          clear: both;
-      }
+    #footer {
+        font-size: .5rem;
+        clear: both;
+    }
 
 }
