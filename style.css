@@ -338,7 +338,7 @@ form.form1 .submitButton {
     }
 
     .nav-list li {
-        font-size: 1.2rem;
+        font-size: 2rem;
         text-align: center;
         background: -moz-linear-gradient(-45deg, rgba(191, 221, 184, 0.09) 0%, rgba(99, 147, 193, 0.39) 100%);
         /* FF3.6-15 */
@@ -349,7 +349,7 @@ form.form1 .submitButton {
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17bfddb8', endColorstr='#636393c1', GradientType=1);
         /* IE6-9 fallback on horizontal gradient */
         font-size: .9rem;
-        padding: .3rem;
+        padding: .7rem;
 
     }
 
